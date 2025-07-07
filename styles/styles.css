@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "Montserrat Light";
+    src: url("../assets/fonts/Montserrat-Light.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/fonts/Montserrat-Medium.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+body {
+    margin: 0;
+}
+
+div.wrapper {
+    width: 20cm;
+    margin: 0 auto;
+    font-family: "Montserrat Light";
+    color: black;
+    background-color: bisque;
+}
+
+/* header
+grid-template-columns: 2fr 1fr;
+*/
+
+div.header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+
+    height: 80px;
+    margin-bottom: 0px;
+}
+
+div.main_header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    font-size: 35px;
+    font-family: "Montserrat Medium";
+    font-weight: bold;
+}
+
+div.header_contacts {
+    grid-column: 2/3;
+    grid-row: 1/3;
+
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+div.header_info {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: end;
+
+    font-family: "Montserrat Medium";
+}
+
+/*content*/
+
+hr {
+    margin-bottom: 10px;
+}
+
+div.block {
+    display: grid;
+    grid-template-columns: 30px auto;
+    margin-bottom: 0px;
+}
+
+header {
+    font-family: "Montserrat Medium";
+    letter-spacing: 0.1em;
+    writing-mode: vertical-lr;
+}
+
+header:before {
+    content: "»  ";
+    font-weight: bold;
+    color: #ED3237;
+}
+
+/*text styles*/
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
+li:before {
+    content: "»  ";
+    font-weight: bold;
+    color: #ED3237;
+}
+
+.text_bold {
+    font-family: "Montserrat Medium";
+    margin-bottom: 5px;
+}
+
+.text_small {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.text_red {
+    color: #ED3237;
+    font-size: 16px;
+}
+
+/*blocks*/
+
+.inner_block {
+    margin-left: 26px;
+    font-size: 14px;
+}
+
+.skills {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+}
+
+
+.project {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.project_sidebars {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
